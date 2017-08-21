@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Project Eular 1</title>
+	</head>
+	
+	<body bgcolor="black" onload="init();">
+		<script>
+			let scrollbox = document.createElement('SCROLLBOX');			
+
+			function init() {
+				console.log("Initialising");
+				
+				scrollbox.style.width = '100%';
+				scrollbox.style.height = '100%';
+				scrollbox.style.overflowY = 'scroll';
+				scrollbox.style.overflowX = 'hidden';
+				scrollbox.style.border = '1px solid white';
+				scrollbox.style.left = '0px';
+				scrollbox.style.top = '0px';
+				scrollbox.style.position = 'absolute';
+				
+				document.documentElement.style.overflowX = 'hidden';
+				document.documentElement.style.overflowY = 'hidden';
+
+				document.body.appendChild(scrollbox);				
+
+				console.log("Initialised");
+			}
+
+			function output(message) {
+				let nElement = document.createElement('DIV');
+
+				nElement.innerHTML = message;
+				nElement.style.width = '100%';
+				nElement.style.height = 'auto';
+				nElement.style.border = '1px solid white';
+				nElement.style.wordWrap = 'break-word';
+				nElement.style.color = 'white';
+
+				scrollbox.appendChild(nElement);
+			}
+		</script>
+		<script src="script.js"></script>
+	</body>
+</html>
