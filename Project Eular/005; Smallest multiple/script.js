@@ -59,7 +59,7 @@ function isPrime(num) {
 
     for (let i = 5; i <= Math.floor(Math.sqrt(num)); i++) {
         for (let e = 0; e <= 2; e += 2) {
-            if (num % (e*i) == 0) {
+            if (num % (e+i) == 0) {
                 return false;
             }
         }
