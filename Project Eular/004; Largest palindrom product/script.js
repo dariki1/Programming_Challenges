@@ -12,23 +12,6 @@ function isPalindrome(num) {
 }
 
 function start() {
-    /*let i = 999;
-    let e = 999;
-
-    do {
-        if (isPalindrome(e*i)) {
-            output(i*e + " is " + e + " * " + i);
-            return;
-        }
-
-        if ((i-1)*e < i*(e-1) ) {
-            e--;
-        } else {
-            i--;
-        }
-    } while (true);*/
-
-    
     let l = 0;
 
     for (let i = 999; i > 99; i--) {
